@@ -1,0 +1,90 @@
+@font-face {
+	font-family: "DejaVuSans";
+	src: url("./fonts/dejavu-sans/DejaVuSans.ttf");
+}
+
+body {
+	margin: 0;
+}
+
+body * {
+	font-family: DejaVuSans !important;
+	color: #ff00ff;
+}
+
+section {
+	height: 80vh;
+	width: 100%;
+}
+
+header {
+	font-family: DejaVu Sans;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px 10px;
+}
+
+header > ul{
+	display: flex;
+	justify-content: space-between;
+
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+header > ul > li {
+	margin: 0;
+}
+
+#first {
+	background-image: url(./img/big-ben.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.HelenFace {
+	display: block;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 522px;
+}
+
+.firstSectionTitle {
+	position: absolute;
+	display: block;
+	bottom: -100px;
+	left: 0;
+	right: 0;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 3;
+}
+
+.rounded_text {
+	display: flex;
+	justify-content: center;
+	width: 500px;
+	margin: 0 auto;
+}
+
+.rounded_text span {
+	position: absolute;
+	display: block;
+	height: 520px;
+	width: 50px;
+	text-align: center;
+
+	font-size: 35px;
+	z-index: 1;
+
+	transition: transform 35s linear, color 1s;
+}
+
+
