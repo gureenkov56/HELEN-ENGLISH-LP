@@ -10,8 +10,6 @@ body {
 body * {
 	font-family: DejaVuSans !important;
 	color: #ff00ff;
-	text-shadow: 3px 3px 0 black;
-
 }
 
 section {
@@ -60,6 +58,9 @@ header > ul > li:hover {
 	margin-right: auto;
 	margin-left: auto;
 	width: 522px;
+	filter:brightness(0);
+	transition: all 1s;
+	transition-delay: 1s;
 }
 
 .firstSectionTitle {
@@ -223,6 +224,8 @@ header > ul > li:hover {
 	margin-right: auto;
 	margin-left: auto;
 	width: 500px;
+	text-shadow: 3px 3px 0 black;
+
 }
 
 .option_wrapper {
@@ -230,6 +233,8 @@ header > ul > li:hover {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	margin-top: 30px;
+	width: 850px;
+	margin: 0 auto;
 }
 
 .first_option_wrapper,
