@@ -10,6 +10,8 @@ body {
 body * {
 	font-family: DejaVuSans !important;
 	color: #ff00ff;
+	text-shadow: 3px 3px 0 black;
+
 }
 
 section {
@@ -35,6 +37,11 @@ header > ul{
 
 header > ul > li {
 	margin: 0;
+	cursor: pointer;
+}
+
+header > ul > li:hover {
+	text-decoration: underline;
 }
 
 #first {
@@ -49,7 +56,7 @@ header > ul > li {
 	position: absolute;
 	z-index: 2;
 	left: 0;
-	right: 0;
+	right: 25px;
 	margin-right: auto;
 	margin-left: auto;
 	width: 522px;
@@ -87,4 +94,183 @@ header > ul > li {
 	transition: transform 35s linear, color 1s;
 }
 
+#second {
+	background-image: url(./img/palms.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 
+	height: 100vh;
+	position: relative;
+}
+
+.second_wrapper {
+	position: absolute;
+
+	top: 40vh;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 600px;
+}
+
+.second_wrapper {
+	position: absolute;
+}
+
+.second_wrapper > img {
+	z-index: 3;
+	position: absolute;
+}
+
+.second_text_color_wrapper {
+	background-color: #00001f;
+	position: absolute;
+	width: 100%;
+	min-height: 250px;
+	top: 80px;
+	z-index: 2;
+	opacity: .5;
+}
+
+.second_wrapper_text_wrapper {
+	position: absolute;
+	z-index: 5;
+
+	top: 150px;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+
+.second_wrapper_str {
+	text-align: center;
+	text-shadow: 3px 3px 0px black;
+}
+
+#third {
+	background-image: url(./img/cash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+}
+
+#third > img {
+	margin-top: 10vh;
+}
+
+#third > p {
+	position: absolute;
+
+	top: 180px;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 600px;
+
+	text-shadow: 1px 1px 0px black;
+}
+
+.third_text_wrapper_color {
+	position: absolute;
+
+	background-color: #00001f;
+	opacity: .5;
+
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 500px;
+	height: 200px;
+}
+
+.thirs_text {
+	position: absolute;
+	top: 300px;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 450px;
+}
+
+.thirs_text_string {
+	display: flex;
+	justify-content: space-between;
+	text-shadow: 3px 3px 0 black;
+}
+
+#fourth {
+	background-image: url(./img/lets-go-bgc.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 120px;
+	position: relative;
+	height: 70vh;
+}
+
+#fourth > p {
+	position: absolute;
+	top: 240px;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 500px;
+}
+
+.option_wrapper {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+.first_option_wrapper,
+.second_option_wrapper {
+	position: relative;
+}
+
+.option_bgc {
+	width: 350px;
+	height: 200px;
+	background-color: #00001f;
+	opacity: .6;
+}
+
+.option_content {
+	position: absolute;
+	top: 20px;
+
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 350px;
+}
+
+.understandBtn {
+	border: none;
+	color: white;
+	text-shadow: none;
+	background-color: #000;
+	padding: 10px;
+	width: 200px;
+	cursor: pointer;
+}
+
+.addMeBtn {
+	color: white;
+	text-shadow: none;
+	background-color: #0000ff;
+	padding: 10px;
+	width: 200px;
+	cursor: pointer;
+	border: none;
+}
