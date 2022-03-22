@@ -27,6 +27,8 @@ header {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px 10px;
+
+  transition-delay: 2s;
 }
 
 header > ul {
@@ -301,6 +303,14 @@ header > ul > li:hover {
   z-index: 5;
 }
 
+.neon_off {
+	color: #bdbdbd !important;
+	background: linear-gradient(0deg, #494949 60%, #4e4e4e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+
 .first__content_wrapper {
   max-width: 500px;
   position: absolute;
@@ -358,56 +368,58 @@ header > ul > li:hover {
   bottom: 20px;
   width: 95%;
   right: 5%;
+
+  transition-delay: 3s;
+}
+
+.brightness {
+  filter: brightness(0);
+  transition: filter 2s;
+  transition-delay: 2s;
+
 }
 
 .first__title {
   position: absolute;
   bottom: -45px;
+  text-align: center;
+  width: 100%;
+}
 
+.second_title {
+  padding-top: 40vh;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.second_text_wrapper {
+  top: 46vh;
+
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+  margin-top: -15px;
+  position: relative;
+}
+
+.second_color {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  width: 500px;
+  height: 200px;
+}
+
+.second_text {
+  position: absolute;
+  top: 5vh;
   left: 0;
   right: 0;
   margin-right: auto;
   margin-left: auto;
-  width: 100%;
-}
-
-.secont_title {
-	padding-top: 40vh;
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin-right: auto;
-	margin-left: auto;
-	width: 400px;
-}
-
-.second_text_wrapper {
-	top: 46vh;
-
-	max-width: 500px;
-	margin: 0 auto;
-	text-align: center;
-	background-color: black;
-	margin-top: -15px;
-	position: relative;
-}
-
-.second_color {
-	background-color: rgba(0, 0, 0, .6);
-	position: absolute;
-	top: 0;
-	width: 500px;
-	height: 200px;
-}
-
-.second_text {
-	position: absolute;
-	top: 5vh;
-	left: 0;
-	right: 0;
-	margin-right: auto;
-	margin-left: auto;
-	width: 400px;
+  width: 400px;
 }
 
 @media screen and (max-width: 500px) {
@@ -424,7 +436,11 @@ header > ul > li:hover {
   }
 
   .second_color {
-	  width: 100vw;
+    width: 100vw;
+  }
+
+  .second_text {
+    width: 99vw;
   }
 }
 
@@ -435,10 +451,18 @@ header > ul > li:hover {
 
   .neon_title {
     font-size: 3.5rem;
-	line-height: 3rem;
+    line-height: 3rem;
   }
 
   .rounded_text_item {
     font-size: 1rem;
+  }
+
+  .second_title {
+    padding-top: 41vh;
+  }
+
+  .second_text {
+    top: 2vh;
   }
 }
