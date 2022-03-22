@@ -8,8 +8,28 @@
     <title>HELEN ENGLISH</title>
   </head>
   <body>
+    <div class="modal_wrapper d-none">
+      <div class="modal_body">
+        <h3>Лучшее решение в твоей жизни</h3>
+
+        <form action="">
+          <div>
+            <label for="">Почта</label>
+          </div>
+          <input type="mail" />
+
+          <div>
+            <label for="">Телефон</label>
+          </div>
+          <input type="tel" value="+7" placeholder="и здесь" />
+
+          <button class="closeModal">Меня ждет успех!</button>
+        </form>
+      </div>
+    </div>
+
     <section id="first">
-      <header>
+      <header class="brightness">
         <ul>
           <li>START</li>
           <li id="scrollToWhyMe">WHY ME</li>
@@ -18,83 +38,86 @@
         </ul>
       </header>
 
-      <div class="rounded_text" id="roundedText">
-        <!--JS appendChild-->
+      <div class="first__content_wrapper">
+        <div class="first_rounded_text_wrapper brightness">
+          <!--<div class="rounded_text_item"></div>-->
+        </div>
+        <img
+          src="./img/helen-main.png"
+          alt="Me"
+          class="first_Helen brightness"
+        />
       </div>
-
-      <img src="./img/helen-main.png" alt="Me" class="HelenFace" />
-      <img
-        src="./img/english-online-off.png"
-        alt="English online"
-        class="firstSectionTitle"
-      />
+      <div class="first__title neon_title neon_off">ONLINE<br />ENGLISH</div>
     </section>
 
     <section id="second">
-      <div class="second_wrapper">
-        <img src="./img/why-me-on.png" alt="Why me" />
-
-        <div class="second_wrapper_text_wrapper">
-          <p class="second_wrapper_str">
-            Английский перестанет быть скучным
-          </p>
+      <div class="neon_title second_title">WHY ME</div>
+      <div class="second_text_wrapper">
+        <div class="second_color"></div>
+        <div class="second_text">
+          <p class="second_wrapper_str">Английский перестанет быть скучным</p>
 
           <p class="second_wrapper_str">Обсудим все компьютерные игры</p>
 
-          <p class="second_wrapper_str">
-            Сдашь ЕГЭ, даже если ты безнадежный
-          </p>
+          <p class="second_wrapper_str">Сдашь ЕГЭ, даже если ты безнадежный</p>
         </div>
-        <div class="second_text_color_wrapper"></div>
       </div>
     </section>
 
-	<section id="third">
-		<img src="./img/price-on.png" alt="Price">
-		<p>Информация для твоей мамочки</p>
+    <section id="third">
+      <div class="neon_title third_title">PRICE</div>
 
-		<div class="third_text_wrapper_color"></div>
+      <p>Информация для твоей мамочки</p>
 
-		<div class="thirs_text">
-			<div class="thirs_text_string">
-				<p>Адекватные ученики</p>
-				<p>5 000 руб / ч</p>
-			</div>
+      <div class="third_text_wrapper_color"></div>
 
-			<div class="thirs_text_string">
-				<p>Способные детки</p>
-				<p>7 000 руб / ч</p>
-			</div>
+      <div class="thirs_text">
+        <div class="thirs_text_string">
+          <p>Адекватные ученики</p>
+          <p>5 000 руб / ч</p>
+        </div>
 
-			<div class="thirs_text_string">
-				<p>Безнадежные чада</p>
-				<p>20 000 руб / ч</p>
-			</div>
-		</div>
-	</section>
+        <div class="thirs_text_string">
+          <p>Способные детки</p>
+          <p>7 000 руб / ч</p>
+        </div>
 
-	<section id="fourth">
-		<img src="./img/lets-go-on.png" alt="lets-go">
-		<p>Еще не понял, что <br />я лучший тичер в твоей жизни?</p>
+        <div class="thirs_text_string">
+          <p>Безнадежные чада</p>
+          <p>20 000 руб / ч</p>
+        </div>
+      </div>
+    </section>
 
-		<div class="option_wrapper">
-			<div class="first_option_wrapper">
-				<div class="option_bgc"></div>
-				<div class="option_content">
-					<h2>Не понял</h2>
-					<button class="understandBtn">Понять</button>
-				</div>
-			</div>
-			<div class="second_option_wrapper">
-				<div class="option_bgc"></div>
-				<div class="option_content">
-					<p>Примите меня в ряды последователей, сенсей</p>
-					<button class="addMeBtn">Записаться</button>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section id="fourth">
+      <div class="neon_title fourth_title">LET'S GO</div>
 
+      <p>Еще не понял, что <br />я лучший тичер в твоей жизни?</p>
+
+      <div class="option_wrapper">
+        <div class="first_option_wrapper">
+          <div class="option_bgc"></div>
+          <div class="option_content">
+            <h2>Не понял</h2>
+            <button class="understandBtn">Понять</button>
+          </div>
+        </div>
+        <div class="second_option_wrapper">
+          <div class="option_bgc"></div>
+          <div class="option_content">
+            <p>Примите меня в ряды последователей, сенсей</p>
+            <button class="addMeBtn openModal">Записаться</button>
+          </div>
+        </div>
+      </div>
+
+      <p class="last_word">
+        HELEN NAZAROVA <br />
+        THE BEST TEACHER IN YOUR LIFE <br />
+        <a href="" class="openModal">TRY FIRST LESSON</a>
+      </p>
+    </section>
   </body>
   <script src="./main.js"></script>
 </html>
