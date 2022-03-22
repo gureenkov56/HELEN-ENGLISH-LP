@@ -73,27 +73,43 @@ document.addEventListener("DOMContentLoaded", () => {
     thirdSection = document.getElementById("third"),
     fourthSection = document.getElementById("fourth");
 
-    understandBtn.addEventListener("click", () => {
-  	secondSection.scrollIntoView({behavior: 'smooth'})
-    });
+  understandBtn.addEventListener("click", () => {
+    secondSection.scrollIntoView({ behavior: "smooth" });
+  });
 
-    scrollToWhyMe.addEventListener("click", () => {
-  	secondSection.scrollIntoView({behavior: 'smooth'})
-    });
+  scrollToWhyMe.addEventListener("click", () => {
+    secondSection.scrollIntoView({ behavior: "smooth" });
+  });
 
-    scrollToPrice.addEventListener("click", () => {
-  	thirdSection.scrollIntoView({behavior: 'smooth'})
-    });
+  scrollToPrice.addEventListener("click", () => {
+    thirdSection.scrollIntoView({ behavior: "smooth" });
+  });
 
-    scrollToLetsGo.addEventListener("click", () => {
-  	fourthSection.scrollIntoView({behavior: 'smooth'})
-    });
+  scrollToLetsGo.addEventListener("click", () => {
+    fourthSection.scrollIntoView({ behavior: "smooth" });
+  });
 
   // modal
-  const openModal = document.querySelector('.openModal'),
-  modalBlock = document.querySelector('.modal_wrapper');
+  const openModal = document.querySelectorAll(".openModal"),
+    closeModal = document.querySelector(".closeModal"),
+    modalBody = document.querySelector(".modal_body");
+  modalBlock = document.querySelector(".modal_wrapper");
 
-  openModal.addEventListener('click', () => {
-	modalBlock.classList.remove('d-none');
-  })
+  openModal.forEach((element) => {
+    element.addEventListener("click", (event) => {
+      event.preventDefault();
+      modalBlock.classList.remove("d-none");
+    });
+  });
+
+  closeModal.addEventListener("click", (event) => {
+    event.preventDefault();
+    modalBlock.classList.add("d-none");
+  });
+
+  modalBlock.addEventListener("click", (event) => {
+    if (!event.composedPath().includes(modalBody)) {
+      modalBlock.classList.add("d-none");
+    }
+  });
 });
