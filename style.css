@@ -51,6 +51,7 @@ header > ul > li:hover {
   background-image: url(./img/big-ben.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
 }
 
@@ -287,16 +288,17 @@ header > ul > li:hover {
 .neon_title {
   font-family: Beon !important;
   font-size: 5rem;
-  font-weight: lighter;
   color: #97eefc;
+  line-height: 70px;
+  text-align: center;
 
   background: linear-gradient(0deg, #97eefc 60%, #f839ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  text-shadow: 0 0 25px #97eefc;
+  text-shadow: 0 0 15px #97eefc;
 
-  line-height: 70px;
+  z-index: 5;
 }
 
 .first__content_wrapper {
@@ -310,6 +312,7 @@ header > ul > li:hover {
   margin-left: auto;
 
   padding: 10px;
+  overflow: hidden;
 }
 
 .first_rounded_text_wrapper {
@@ -327,13 +330,13 @@ header > ul > li:hover {
 }
 
 @keyframes infinite-spinning {
-	from {
-	  transform: rotate(0deg);
-	}
-	to {
-	  transform: rotate(360deg);
-	}
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 .rounded_text_item {
   height: 100%;
@@ -354,12 +357,12 @@ header > ul > li:hover {
   position: absolute;
   bottom: 20px;
   width: 95%;
+  right: 5%;
 }
 
 .first__title {
   position: absolute;
   bottom: -45px;
-  text-align: center;
 
   left: 0;
   right: 0;
@@ -368,8 +371,74 @@ header > ul > li:hover {
   width: 100%;
 }
 
+.secont_title {
+	padding-top: 40vh;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 400px;
+}
+
+.second_text_wrapper {
+	top: 46vh;
+
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: black;
+	margin-top: -15px;
+	position: relative;
+}
+
+.second_color {
+	background-color: rgba(0, 0, 0, .6);
+	position: absolute;
+	top: 0;
+	width: 500px;
+	height: 200px;
+}
+
+.second_text {
+	position: absolute;
+	top: 5vh;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 400px;
+}
+
 @media screen and (max-width: 500px) {
   header {
     display: none;
+  }
+
+  .neon_title {
+    font-size: 4.5rem;
+  }
+
+  .rounded_text_item {
+    font-size: 1.5rem;
+  }
+
+  .second_color {
+	  width: 100vw;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header {
+    display: none;
+  }
+
+  .neon_title {
+    font-size: 3.5rem;
+	line-height: 3rem;
+  }
+
+  .rounded_text_item {
+    font-size: 1rem;
   }
 }
