@@ -172,8 +172,7 @@ header > ul > li:hover {
 }
 
 #third > p {
-
-text-align: center;
+  text-align: center;
   text-shadow: 2px 2px 0px black;
 }
 
@@ -291,8 +290,8 @@ text-align: center;
 }
 
 .neon_off {
-	color: #bdbdbd !important;
-	background: linear-gradient(0deg, #494949 60%, #4e4e4e);
+  color: #bdbdbd !important;
+  background: linear-gradient(0deg, #494949 60%, #4e4e4e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: none;
@@ -363,7 +362,6 @@ text-align: center;
   filter: brightness(0);
   transition: filter 2s;
   transition-delay: 2s;
-
 }
 
 .first__title {
@@ -410,67 +408,65 @@ text-align: center;
 }
 
 .third_title {
-	padding-top: 8vh;
+  padding-top: 8vh;
 }
 
 .last_word {
-	position: absolute;
-	bottom: 1px;
-	text-align: center;
-	width: 100%;
-	color: rgb(255, 162, 255);
+  position: absolute;
+  bottom: 1px;
+  text-align: center;
+  width: 100%;
+  color: rgb(255, 162, 255);
 }
 
 .last_word > a {
-	font-size: .7rem;
-	color: rgb(255, 162, 255);
-	text-shadow: none;
+  font-size: 0.7rem;
+  color: rgb(255, 162, 255);
+  text-shadow: none;
 }
 
 .d-none {
-	display: none !important;
+  display: none !important;
 }
 
 .modal_wrapper {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, .5);
-	z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal_body {
-	max-width: 300px;
-	background-color: black;
-	padding: 30px;
-	border: 2px solid #ff00ff;
+  max-width: 300px;
+  background-color: black;
+  padding: 30px;
+  border: 2px solid #ff00ff;
 }
 
 .modal_body input {
-	margin: 20px 0;
-	width: 100%;
-	height: 2rem;
+  margin: 20px 0;
+  width: 100%;
+  height: 2rem;
 }
 
 .modal_body button {
-	border: none;
-	background-color: #0000ff;
-	color: white;
-	padding: 10px 20px;
-	cursor: pointer;
+  border: none;
+  background-color: #0000ff;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
-
-
 @media screen and (max-width: 710px) {
-	#fourth {
-		height: 100vh;
-	}
+  #fourth {
+    height: 100vh;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -496,7 +492,7 @@ text-align: center;
   }
 
   .third_text_wrapper_color {
-	  width: 100%;
+    width: 100%;
   }
 }
 
@@ -520,5 +516,14 @@ text-align: center;
 
   .second_text {
     top: 2vh;
+  }
+
+  #fourth {
+    height: 150vh;
+  }
+
+  .option_bgc,
+  .option_content {
+    width: 95vw;
   }
 }
