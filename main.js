@@ -63,26 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  //  setInterval(() => {
-  //    neons.forEach((el) => {
-  //      el.classList.toggle("neon_off");
-  //    });
-  //  }, 50);
-
-  // animate neon text
-  //  let firstImg = document.querySelector(".firstSectionTitle");
-
-  //  setTimeout(() => {
-  //    OnOffNeon(firstImg, "./img/english-online-on.png", 500);
-  //    OnOffNeon(firstImg, "./img/english-online-off.png", 550);
-  //    OnOffNeon(firstImg, "./img/english-online-off.png", 700);
-  //    OnOffNeon(firstImg, "./img/english-online-off.png", 750);
-  //    OnOffNeon(firstImg, "./img/english-online-on.png", 1000);
-
-  //    OnOffNeon(firstImg, "./img/english-online-off.png", 3000);
-  //    OnOffNeon(firstImg, "./img/english-online-on.png", 3100);
-  //  }, 0);
-
   // scroll
 
   const understandBtn = document.querySelector(".understandBtn"),
@@ -93,25 +73,27 @@ document.addEventListener("DOMContentLoaded", () => {
     thirdSection = document.getElementById("third"),
     fourthSection = document.getElementById("fourth");
 
-  //  understandBtn.addEventListener("click", () => {
-  //	secondSection.scrollIntoView({behavior: 'smooth'})
-  //  });
+    understandBtn.addEventListener("click", () => {
+  	secondSection.scrollIntoView({behavior: 'smooth'})
+    });
 
-  //  scrollToWhyMe.addEventListener("click", () => {
-  //	secondSection.scrollIntoView({behavior: 'smooth'})
-  //  });
+    scrollToWhyMe.addEventListener("click", () => {
+  	secondSection.scrollIntoView({behavior: 'smooth'})
+    });
 
-  //  scrollToPrice.addEventListener("click", () => {
-  //	thirdSection.scrollIntoView({behavior: 'smooth'})
-  //  });
+    scrollToPrice.addEventListener("click", () => {
+  	thirdSection.scrollIntoView({behavior: 'smooth'})
+    });
 
-  //  scrollToLetsGo.addEventListener("click", () => {
-  //	fourthSection.scrollIntoView({behavior: 'smooth'})
-  //  });
+    scrollToLetsGo.addEventListener("click", () => {
+  	fourthSection.scrollIntoView({behavior: 'smooth'})
+    });
 
-  function OnOffNeon(DOMimg, newsrc, timeout) {
-    setTimeout(() => {
-      DOMimg.setAttribute("src", newsrc);
-    }, timeout);
-  }
+  // modal
+  const openModal = document.querySelector('.openModal'),
+  modalBlock = document.querySelector('.modal_wrapper');
+
+  openModal.addEventListener('click', () => {
+	modalBlock.classList.remove('d-none');
+  })
 });
